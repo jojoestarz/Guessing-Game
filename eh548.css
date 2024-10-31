@@ -1,0 +1,142 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #181D27;
+}
+
+@media (max-width: 800px) {
+    #superContainer {
+        flex-direction: column;
+    }
+    .item {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+}
+
+h1 {
+    text-align: center; 
+    color: #F0D2D1;
+}
+
+h2 {
+    grid-row-start: 2;
+    margin-bottom: 30px;
+}
+
+.numBox {
+    background-color: #F95738;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 150px;
+    width: 300px;
+    border-radius: 10%;
+}
+
+#Ranges {
+    margin-bottom: 20px;
+    grid-row-start: 3;
+}
+
+button {
+    background-color: #00e8fc;
+    color: greenyellow;
+    transition: all 0.3s ease-out, box-shadow 0.2s ease-out;
+    color: #181D27; 
+    border-radius: 13%;
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #181D27;
+    color: #00e8fc;
+    transform: translateY(-2px);
+}
+
+
+
+
+.startbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+#superContainer {
+    display: none;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    gap: 50px;
+}
+
+.container {
+    background-color: #F95738;
+    border-radius: 10%;
+    padding: 1%;
+    height: 20%;
+    width: 170px;
+    margin: 10px; /* Add margin to separate the divs */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    background-color: #F95738;
+    border-radius: 5%;
+    padding: 1%;
+    height: 60%;
+    width: 200px;
+    margin: 10px; /* Add margin to separate the divs */
+    display: flex;
+    flex-direction: column;
+
+}
+
+#EnterNum {
+    grid-row-start: 1;
+}
+
+#check {
+    margin-top: 10px;
+}
+
+.guessing {
+    grid-row-start: 4;
+}
+
+#resultDialog {
+    width: 300px;
+    padding: 20px;
+    background-color: #F95738ff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#playAgainButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="eh548.css">
+    <script rel="js" src="eh548.js" defer></script>
+    <title>The Number Game</title>
+        <h1> Guessing the number game  </h1>
+    </head>
+<body>
+
+
+    <div class="numBox" id="NumberBox">
+
+        <h2>Select a range of numbers </h2>
+
+
+        <div id="Ranges">
+            <input type="radio" name="Range" id="10" onclick="EnableBtn()">
+            <label for="10"> 10 </label>
+            <input type="radio" name="Range" id="100" onclick="EnableBtn()">
+            <label for="100"> 100 </label>
+            <input type="radio" name="Range" id="1000" onclick="EnableBtn()">
+            <label for="1000"> 1000 </label>
+            
+        </div>
+        
+        <div class="startbtn">
+        <button disabled  id="Startbtn" > Start </button>
+
+        </div>
+
+</div>
+
+
+<div id="superContainer"> 
+
+        <div class="container" id="EnterBox" >
+          
+                <h id="EnterNum"> Enter a number between 1 and <span id="maxNum"></span></h>
+            
+            <div class="guessing">
+                <label for="guess">Guess:</label>
+                <input type="number" id="input" name="guess" required>
+                <button id="check"> Check </button>
+            </div>
+
+        </div>
+      
+
+ <div class="result">
+                    <h3><b>Guessing results</b></h3>
+                    <ol id="ListOfGuesses"></ol>
+                    <div class="attempts"> <span id="numberofguesses"></span></div>  
+</div>
+        
+
+    
+</div>
+
+<dialog id="resultDialog">
+    <p id="resultMessage"></p>
+    <button id="playAgainButton">Play again</button>
+</dialog>
+
+</body>
+
+
+
+</html>
